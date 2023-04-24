@@ -261,28 +261,37 @@ figure:hover img {
 
 }
 
-.standard-landscape-img {
+/* .standard-landscape-img {
     width: 426px;
     height: 240px;
+} */
+
+.standard-landscape-img {
+    width: 854px;
+    height: 480px;
 }
 
-.standard-portrait-img {
+/* .standard-portrait-img {
     width: 290px;
     height: 426px;
+} */
+
+.standard-portrait-img {
+    width: 387px;
+    height: 516px;
 }
 
-.standard-landscape-custom1-img {
+/* .standard-landscape-custom1-img {
     width: 640px;
     height: 360px;
-}
+} */
 
 /* Projects.html */
 
 .projects-div {
     justify-content: space-around;
     align-items: center;
-    margin-block: 100px;
-
+    margin-block: 200px;
 }
 
 
@@ -315,5 +324,10 @@ figure:hover img {
     justify-content: left;
     flex-direction: row;
     align-items: left;
-    margin-top: 50px;
+    margin-top: 20px;
+}
+
+.pam8403-amplifier {
+    /* border: white 2px ridge; */
+    margin-block: 50px;
 }
