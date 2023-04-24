@@ -208,11 +208,6 @@ h2 {
     }
 }
 
-.piano-img {
-    width: 10%;
-}
-
-
 /* new */
 
 figure {
@@ -220,12 +215,14 @@ figure {
     border-radius: 1rem;
     overflow: hidden;
     cursor: pointer;
-  }
-  figure > * {
+}
+
+figure>* {
     grid-area: 1/1;
     transition: .4s;
-  }
-  figure figcaption {
+}
+
+figure figcaption {
     display: grid;
     align-items: end;
     font-family: sans-serif;
@@ -233,37 +230,45 @@ figure {
     font-weight: bold;
     color: #ffffff;
     padding: .75rem;
-    background: var(--c,#0009);
-    clip-path: inset(0 var(--_i,100%) 0 0);
+    background: var(--c, #0009);
+    clip-path: inset(0 var(--_i, 100%) 0 0);
     -webkit-mask:
-      linear-gradient(#000 0 0),
-      linear-gradient(#000 0 0);
+        linear-gradient(#000 0 0),
+        linear-gradient(#000 0 0);
     -webkit-mask-composite: xor;
     -webkit-mask-clip: text, padding-box;
-  }
-  figure:hover figcaption{
+}
+
+figure:hover figcaption {
     --_i: 0%;
-  }
-  figure:hover img {
+}
+
+figure:hover img {
     transform: scale(1.2);
-  }
-  @supports not (-webkit-mask-clip: text) {
+}
+
+@supports not (-webkit-mask-clip: text) {
     figure figcaption {
-     -webkit-mask: none;
-     color: #fff;
+        -webkit-mask: none;
+        color: #fff;
     }
-  }
+}
 
-
-
-  .hobbies-div {
+.hobbies-div {
     justify-content: space-around;
     align-items: center;
-    margin-block: 50px;
-    
-  }
+    margin-block: 100px;
 
-  .hobbies-img {
+}
+
+.standard-img {
     width: 426px;
     height: 240px;
-  }
+}
+
+.projects-div {
+    justify-content: space-around;
+    align-items: center;
+    margin-block: 100px;
+
+}
